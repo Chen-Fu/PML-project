@@ -53,8 +53,8 @@ After cleaning, the data set has only 54 variables now (including "classe").
 #Check % of NA for every column
 percNA <- sapply(1:160, function(i) sum(is.na(train[,i]))/dim(train)[1])
 
-#Show the summary of percNA
-summary(percNA)
+#Show the plot of percNA
+plot(percNA)
 
 #List all columns for selection and select non-NA columns
 #percNA < 0.5 is arbitrary, one can use any number between 0 and 0.9
